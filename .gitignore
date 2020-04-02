@@ -1,0 +1,10 @@
+.DS_Store
+*.err
+*.log
+*.out
+*.pid
+*.pyc
+*.idea
+self_logs/*
+logs/*
+__pycache__
