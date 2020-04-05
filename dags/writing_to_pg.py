@@ -75,6 +75,7 @@ default_args = {
  
 dag = DAG('writing_to_pg',
           default_args=default_args,
+          start_date=dt.datetime.now(),
           schedule_interval=dt.timedelta(seconds=10)
           )
 

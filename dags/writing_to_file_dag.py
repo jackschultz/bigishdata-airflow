@@ -11,6 +11,7 @@ def write_to_file(**kwargs):
         print('Times to be written to file:', dtn, execution_time)
         f.write(f'{dtn}, {execution_time}\n')
 
+
 default_args = {
     'owner': 'airflow',
     'start_date': dt.datetime.now(),
