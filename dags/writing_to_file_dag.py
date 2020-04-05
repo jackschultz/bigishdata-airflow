@@ -14,7 +14,6 @@ def write_to_file(**kwargs):
 
 default_args = {
     'owner': 'airflow',
-    'start_date': dt.datetime.now(),
     'retries': 0
 }
  
