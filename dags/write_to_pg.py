@@ -50,12 +50,12 @@ default_args = {
 }
  
 with DAG('writing_to_pg',
-          default_args=default_args,
-          start_date=dt.datetime.now(),
-          schedule_interval=dt.timedelta(seconds=10)
-          ) as dag:
+         default_args=default_args,
+         start_date=dt.datetime.now(),
+         schedule_interval=dt.timedelta(seconds=10)
+         ) as dag:
 
     write_to_pg_operator = PythonOperator(task_id='write_to_pg', python_callable=write_to_pg, provide_context=True, dag=dag)
     format_run_time_pg_operator = PythonOperator(task_id='format_run_time_pg', python_callable=format_run_time_pg, provide_context=True, dag=dag)
 
-     write_to_pg_operator >> format_run_time_pg_operator
+    write_to_pg_operator >> format_run_time_pg_operator
