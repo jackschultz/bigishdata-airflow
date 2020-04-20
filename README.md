@@ -5,7 +5,9 @@ Code for a series of posts on bigishdata.com that go through the process of gett
 ### Blog Posts
 
 Part 1 [Apache Airflow Part 1 — Introduction, setup, and writing data to files](https://bigishdata.com/2020/04/05/apache-airflow-part-1-introduction-setup-and-writing-data-to-files/)
-Part 2 -- 
+
+Part 2 -- [Apache Airflow Part 2 — Connections, Hooks, reading and writing to Postgres, and XComs](https://bigishdata.com/2020/04/20/apache-airflow-part-2-connections-hooks-reading-and-writing-to-postgres-and-xcoms/)
+
 Part 3 -- To come...
 
 ### Cloning and Activiting
